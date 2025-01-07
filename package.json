@@ -1,15 +1,19 @@
 {
   "name": "convertmate",
   "version": "1.0.0",
+  "description": "Projeto de conversão de moedas usando Express e EJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest"
   },
-  "author": "",
+  "author": "Lais Guedes",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

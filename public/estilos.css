@@ -37,6 +37,7 @@ button{
 }
 
 .result {
+    text-align: center;
     padding: 10px;
     border: 1px solid #d8d8d8;
     background: #fdfdfd;
