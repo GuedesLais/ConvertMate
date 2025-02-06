@@ -1,44 +1,81 @@
-
 .logo {
-    width: 100%;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-form { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
+.hidden {
+  visibility: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-various-gold-coins-arranged-in-a-golden-pile-picture-image_2775749.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 input {
-    display: block;
-    border: 1px solid #ed145b;
-    background-color: black;
-    font-size: 20px;
-    padding: 10px;
-    margin: 2px;
-    color: #fff;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-
+  display: block;
+  border: 1px solid #eb620e;
+  background-color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 2px;
+  color: #fff;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
 }
-button{
-    border: 1px solid #ed145b;
-    background-color: #ed145b;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 30px;
+button {
+  border: 1px solid #eb620e;
+  background-color: #eb620e;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 .result {
-    text-align: center;
-    padding: 10px;
-    background: #fdfdfd;
+  text-align: center;
+  padding: 10px;
+  background: #fdfdfd;
 }
